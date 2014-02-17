@@ -104,12 +104,13 @@
   whitespace = nowarn
 [branch]
   autosetupmerge = true
+	autosetuprebase = always
 [push]
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
   default = tracking
 [core]
-  autocrlf = false
+	autocrlf = input
   editor = vim
   excludesfile = ~/.yadr/git/gitignore
 [advice]
@@ -125,3 +126,7 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[pull]
+	rebase = preserve
+[credential]
+	helper = cache --timeout=3600
