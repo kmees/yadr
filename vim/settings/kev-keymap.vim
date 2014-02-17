@@ -2,8 +2,12 @@
 " General
 " ========================================
 " Breaks the line and adds an empty line in between
-au FileType javascript imap <buffer> <Return><Return> <Return><Esc>O
-au FileType css imap <buffer> <Return><Return> <Return><Esc>O
+if has("gui_running")
+  imap <S-Return> <Return><Esc>O
+else
+  au FileType javascript imap <buffer> <Return><Return> <Return><Esc>O
+  au FileType css imap <buffer> <Return><Return> <Return><Esc>O
+endif
 
 " NERDTree
 nmap <leader>n :NERDTreeFocus<CR>
