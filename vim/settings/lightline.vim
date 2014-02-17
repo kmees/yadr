@@ -1,5 +1,5 @@
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': has('gui_running') ? 'solarized' : '16color',
       \ 'component': {
       \   'readonly': '%{&readonly?"⭤":""}',
       \ },
