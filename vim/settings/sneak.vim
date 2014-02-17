@@ -1,1 +1,1 @@
-nmap <Space> <Plug>SneakForward
+nmap <S-Space> <Plug>SneakForward
