@@ -1,0 +1,8 @@
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': ['html'] }
+
+" override Yankring omaps
+omap W <Plug>CamelCaseMotion_w
+omap B <Plug>CamelCaseMotion_b
+omap E <Plug>CamelCaseMotion_e
