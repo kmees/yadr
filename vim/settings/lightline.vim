@@ -6,10 +6,7 @@ let g:lightline = {
       \ },
       \ 'component': {
       \   'readonly': '%{&readonly?"⭤":""}',
-      \   'fugitive': '⭠ %{exists("*fugitive#head")?fugitive#head():""}',
-      \ },
-      \ 'component_function': {
-      \   'myFilename': 'MyFilename'
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
       \ },
       \ 'component_visible_condition': {
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
