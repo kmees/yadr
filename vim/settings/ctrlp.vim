@@ -22,6 +22,7 @@ let g:ctrlp_switch_buffer = 0
 " it interferes with YankRing (paste, then hit ctrl-p)
 let g:ctrlp_map = ',t'
 nnoremap <silent> ,t :CtrlP<CR>
+nnoremap <silent> ,l :CtrlPCurWD<CR>
 
 " Additional mapping for buffer search
 nnoremap <silent> ,b :CtrlPBuffer<cr>
