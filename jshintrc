@@ -2,7 +2,7 @@
     "indent"        : 2,
     "maxerr"        : 100,
     "globals"     : {
-        "angular": false,
+        "angular": false
     },
 
     "bitwise"       : true,
@@ -19,7 +19,7 @@
     "regexp"        : false,
     "undef"         : true,
     "unused"        : true,
-    "strict"        : true,
+    "strict"        : false,
     "trailing"      : true,
 
     "asi"           : false,
