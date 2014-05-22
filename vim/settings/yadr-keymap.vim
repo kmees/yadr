@@ -173,10 +173,12 @@ nnoremap <D-Left> <C-w><
 nnoremap <D-Right>  <C-w>>
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
-imap <silent> <C-K> <%=   %><Esc>3hi
+" imap <silent> <C-K> <%=   %><Esc>3hi
 
-" create <%= foo %> erb tags using Ctrl-j in edit mode
-imap <silent> <C-J> <%  %><Esc>2hi
+" create <% foo %> erb tags using Ctrl-j in edit mode
+" imap <silent> <C-J> <%  %><Esc>2hi
+imap <silent> <C-j> _
+imap <silent> <C-f> -
 
 " ============================
 " Shortcuts for everyday tasks

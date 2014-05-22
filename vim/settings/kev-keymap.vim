@@ -10,9 +10,11 @@ else
 endif
 
 " NERDTree
-nmap <leader>n :NERDTreeFocus<CR>
-nmap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
 
+" Swap ; and :
+nnoremap ; :
 
 " ========================================
 " LiveScript
@@ -32,17 +34,26 @@ nnoremap <silent> ,gc :Gcommit<CR>
 " ========================================
 " (j)ump and (e)dit
 " ========================================
-map <leader>ja :CtrlP app/styles<CR>
-map <leader>jc :CtrlP app/*scripts/controllers<CR>
-map <leader>jd :CtrlP app/*scripts/directives<CR>
-map <leader>jf :CtrlP app/*scripts/filters<CR>
-map <leader>jl :CtrlP app/locales<CR>
-map <leader>js :CtrlP app/*scripts/services<CR>
-map <leader>jt :CtrlP test/spec<CR>
-map <leader>jv :CtrlP app/views<CR>
+nnoremap <leader>ja :CtrlP app/styles<CR>
+nnoremap <leader>jc :CtrlP app/*scripts/controllers<CR>
+nnoremap <leader>jd :CtrlP app/*scripts/directives<CR>
+nnoremap <leader>jf :CtrlP app/*scripts/filters<CR>
+nnoremap <leader>jl :CtrlP app/locales<CR>
+nnoremap <leader>js :CtrlP app/*scripts/services<CR>
+nnoremap <leader>jt :CtrlP test/spec<CR>
+nnoremap <leader>jv :CtrlP app/views<CR>
 
-map <leader>eg :e Gruntfile.*<CR>
-map <leader>ek :e karma.conf.js<CR>
-map <leader>ep :e package.json<CR>
-map <leader>eb :e bower.json<CR>
-map <leader>er :e readme.*<CR>
+nnoremap <leader>eg :e Gruntfile.*<CR>
+nnoremap <leader>ek :e karma.conf.js<CR>
+nnoremap <leader>ep :e package.json<CR>
+nnoremap <leader>eb :e bower.json<CR>
+nnoremap <leader>er :e readme.*<CR>
+
+" ========================================
+" Visual Drag
+" ========================================
+vmap <expr> <LEFT> DVB_Drag('left')
+vmap <expr> <RIGHT> DVB_Drag('right')
+vmap <expr> <DOWN> DVB_Drag('down')
+vmap <expr> <UP> DVB_Drag('up')
+vmap <expr> D DVB_Duplicate()
