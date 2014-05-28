@@ -162,5 +162,15 @@ alias tks='tmux kill-session'
 # rmrf
 alias rmrf='rm -rf'
 
-#gulp
+# gulp
 alias gulp='lsc-gulp'
+
+# bower / npm
+alias bi='bower install'
+alias bis='bower install --save'
+alias bn='bower info'
+alias bs='bower search'
+alias nis='npm install --save'
+alias nid='npm install --save-dev'
+alias nn='npm info'
+alias ns='npm search'
