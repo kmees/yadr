@@ -30,7 +30,6 @@ nnoremap <silent> ,l :CtrlPCurWD<CR>
 
 " Additional mapping for buffer search
 nnoremap <silent> ,b :CtrlPBuffer<cr>
-nnoremap <silent> <C-b> :CtrlPBuffer<cr>
 
 " Cmd-Shift-P to clear the cache
 nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
