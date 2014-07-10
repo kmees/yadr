@@ -3,4 +3,5 @@
 augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+    au BufNewFile,BufRead *.ngdoc set filetype=ghmarkdown
 augroup END
