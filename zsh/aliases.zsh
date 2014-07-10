@@ -158,6 +158,7 @@ alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A
 # TMux
 alias tns='tmux new-session'
 alias tks='tmux kill-session'
+alias tls='tmux ls'
 
 # rmrf
 alias rmrf='rm -rf'
@@ -170,6 +171,7 @@ alias bi='bower install'
 alias bis='bower install --save'
 alias bn='bower info'
 alias bs='bower search'
+alias ni='npm install'
 alias nis='npm install --save'
 alias nid='npm install --save-dev'
 alias nn='npm info'

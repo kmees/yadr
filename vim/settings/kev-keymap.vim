@@ -2,12 +2,12 @@
 " General
 " ========================================
 " Breaks the line and adds an empty line in between
-if has("gui_running")
-  imap <S-Return> <Return><Esc>O
-else
-  au FileType javascript imap <buffer> <Return><Return> <Return><Esc>O
-  au FileType css imap <buffer> <Return><Return> <Return><Esc>O
-endif
+" if has("gui_running")
+"   imap <S-Return> <Return><Esc>O
+" else
+"   au FileType javascript imap <buffer> <Return><Return> <Return><Esc>O
+"   au FileType css imap <buffer> <Return><Return> <Return><Esc>O
+" endif
 
 " NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -20,7 +20,7 @@ nnoremap ; :
 " LiveScript
 " ========================================
 " Word list
-imap <C-L> <[  ]><ESC>2hi
+imap <C-H> <[  ]><ESC>2hi
 
 
 " ========================================
