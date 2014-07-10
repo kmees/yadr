@@ -1,0 +1,16 @@
+let g:syntastic_html_tidy_ignore_errors = [
+    \"trimming empty <i>",
+    \"trimming empty <span>",
+    \"trimming empty <select>",
+    \"<input> proprietary attribute \"autocomplete\"",
+    \"proprietary attribute \"role\"",
+    \"proprietary attribute \"hidden\"",
+    \"proprietary attribute \"ng-",
+\]
+let g:syntastic_loc_list_height=3
+let g:syntastic_coffee_coffeelint_args="--file /Users/kev/.coffeelintrc"
+let g:syntastic_quiet_messages = {}
+
+let NERDTreeIgnore=['\~$', 'pkg$[[dir]]', 'obj$[[dir]]']
+
+imap <S-Tab> <Plug>delimitMateJumpMany
