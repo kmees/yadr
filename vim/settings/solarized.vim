@@ -59,7 +59,12 @@ if !exists("g:yadr_disable_solarized_enhancements")
   hi! CursorLine cterm=NONE gui=NONE
   hi! Visual ctermbg=233
   hi! Type gui=bold
-  hi! EasyMotionTarget guifg=#4CE660 gui=bold
+
+  hi! EasyMotionTarget guifg=#4CE660 gui=bold ctermfg=0 ctermbg=5
+  hi! EasyMotionTarget2First guifg=#4CE660 gui=bold ctermfg=0 ctermbg=5
+  hi! EasyMotionTarget2Second guifg=#4CE660 ctermfg=5 ctermbg=0
+  hi! link SneakPluginTarget EasyMotionTarget
+
 
   " Make sure this file loads itself on top of any other color settings
   au VimEnter * so ~/.vim/settings/solarized.vim
