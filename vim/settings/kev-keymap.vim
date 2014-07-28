@@ -20,7 +20,7 @@ nnoremap ; :
 " LiveScript
 " ========================================
 " Word list
-imap <C-H> <[  ]><ESC>2hi
+au FileType ls imap <buffer> <C-W> <[ ]><ESC>2hi
 
 
 " ========================================
@@ -43,17 +43,9 @@ nnoremap <leader>js :CtrlP app/*scripts/services<CR>
 nnoremap <leader>jt :CtrlP test/spec<CR>
 nnoremap <leader>jv :CtrlP app/views<CR>
 
-nnoremap <leader>eg :e Gruntfile.*<CR>
+nnoremap <leader>egr :find Gruntfile.*<CR>
+nnoremap <leader>egu :find gulpfile.*<CR>
 nnoremap <leader>ek :e karma.conf.js<CR>
 nnoremap <leader>ep :e package.json<CR>
 nnoremap <leader>eb :e bower.json<CR>
 nnoremap <leader>er :e readme.*<CR>
-
-" ========================================
-" Visual Drag
-" ========================================
-vmap <expr> <LEFT> DVB_Drag('left')
-vmap <expr> <RIGHT> DVB_Drag('right')
-vmap <expr> <DOWN> DVB_Drag('down')
-vmap <expr> <UP> DVB_Drag('up')
-vmap <expr> D DVB_Duplicate()
