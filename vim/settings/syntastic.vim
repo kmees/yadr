@@ -6,3 +6,5 @@ let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=1
 "don't care about warnings
 let g:syntastic_quiet_messages = {'level': 'warnings'}
+"tidy html5
+let g:syntastic_html_tidy_exec = '/usr/local/Cellar/tidy/HEAD/bin/tidy'
